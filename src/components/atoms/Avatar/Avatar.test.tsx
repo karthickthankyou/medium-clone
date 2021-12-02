@@ -4,6 +4,6 @@ import Avatar from './Avatar'
 
 describe('Avatar Component', () => {
   test('should render', () => {
-    render(<Avatar src='https://via.placeholder.com/150' size='sm' />)
+    render(<Avatar size='sm' src='https://via.placeholder.com/150' />)
   })
 })

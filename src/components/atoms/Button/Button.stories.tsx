@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof Button> = ({
   disabled,
   onClickAction,
   children,
-  className,
+  classes,
 }) => (
   <div className='flex items-center justify-center h-screen'>
     <Button
@@ -25,7 +25,7 @@ const Template: ComponentStory<typeof Button> = ({
       fullWidth={fullWidth}
       disabled={disabled}
       onClickAction={onClickAction}
-      className={className}
+      classes={classes}
     >
       {children}
     </Button>
@@ -122,7 +122,7 @@ Disabled.args = {
 export const CustomClasses = Template.bind({})
 CustomClasses.args = {
   children: 'custom classes',
-  className: 'ml-12 rotate-12 skew-x-12',
+  classes: 'ml-12 rotate-12 skew-x-12',
 }
 export const CrazyChildren = Template.bind({})
 CrazyChildren.args = {

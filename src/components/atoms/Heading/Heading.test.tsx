@@ -4,7 +4,7 @@ import Heading from '.'
 describe('header component', () => {
   const headingContent = 'Heading 0'
   test('should render with given text', async () => {
-    render(<Heading>{headingContent}</Heading>)
+    const { container } = render(<Heading>{headingContent}</Heading>)
 
     expect(screen.getByText(headingContent)).toHaveTextContent(headingContent)
   })

@@ -1,7 +1,11 @@
 const colors = require('tailwindcss/colors')
+const lineClamp = require('@tailwindcss/line-clamp')
+const aspectRatio = require('@tailwindcss/aspect-ratio')
+const tailwindScrollbarHide = require('tailwind-scrollbar-hide')
 
 module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -11,5 +15,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [tailwindScrollbarHide, lineClamp, aspectRatio],
 }

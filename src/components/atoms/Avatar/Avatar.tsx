@@ -1,4 +1,4 @@
-import Image from '../Image'
+import Image from 'src/components/atoms/Image'
 
 export interface IAvatarProps {
   size: 'sm' | 'md' | 'lg'
@@ -22,31 +22,13 @@ const Avatar = ({
   }
   return (
     <div className={` overflow-hidden p-1 inline-block relative `}>
-      {/* <div className={` ${sizeCls[size]}`}>
-        <Image
-          src={src}
-          alt=''
-          layout='fill'
-          placeholder='blur' // this is new!
-          className={`object-cover ${rounded ? 'rounded-full' : 'rounded'} ${
-            shadow && 'shadow-lg'
-          } `}
-        />
-      </div> */}
-
-      <div className={`${sizeCls[size]} overflow-hidden`}>
-        <Image
-          src={src}
-          alt=''
-          layout='fill'
-          placeholder='blur'
-          blurDataURL='https://via.placeholder.com/10'
-          className={`object-cover w-full h-full ${
-            rounded ? 'rounded-full' : 'rounded'
-          } ${shadow && 'shadow-lg'} `}
-        />
-      </div>
-
+      <Image
+        src={src}
+        alt=''
+        className={`object-cover  ${shadow && 'shadow-lg'} ${
+          rounded ? 'rounded-full' : 'rounded'
+        } ${sizeCls[size]}`}
+      />
       {count ? (
         <div className='absolute top-0 right-0 flex items-center justify-center p-1 text-xs font-bold text-white bg-black border-2 border-white rounded-full w-7 h-7'>
           {count > 9 ? '9+' : count}

@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import Link from 'next/link'
+import Link from 'src/components/atoms/Link'
 import NextErrorComponent from 'next/error'
 
 import * as Sentry from '@sentry/nextjs'

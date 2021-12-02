@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'src/components/atoms/Link'
 
 export interface IBadgeProps {
   displayText: string
@@ -12,12 +12,11 @@ const Badge = ({ displayText, size = 'md' }: IBadgeProps) => {
     lg: 'px-3 py-2 text-sm',
   }
   return (
-    <Link href='/'>
-      <a
-        className={`transition-all duration-300 bg-gray-200 rounded-full hover:bg-gray-300 ${sizeCls[size]}`}
-      >
-        {displayText}
-      </a>
+    <Link
+      href='/'
+      className={`transition-all duration-300 bg-gray-200 rounded-full hover:bg-gray-300 ${sizeCls[size]}`}
+    >
+      {displayText}
     </Link>
   )
 }

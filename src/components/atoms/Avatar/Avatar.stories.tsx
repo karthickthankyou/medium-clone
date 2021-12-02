@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import img from 'src/assets/image.jpg'
+import image from 'src/assets/image.jpg'
 import Avatar from './Avatar'
 
 export default {
@@ -27,6 +27,6 @@ const Template: ComponentStory<typeof Avatar> = ({
 export const Primary = Template.bind({})
 Primary.args = {
   size: 'sm',
-  src: img.toString(),
+  src: image.toString(),
 }
 Primary.parameters = {}

@@ -8,7 +8,7 @@ export interface IButtonProps {
   fullWidth?: boolean
   disabled?: boolean
   onClickAction?: MouseEventHandler<HTMLButtonElement>
-  className?: string
+  classes?: string
 }
 
 const variantColor = {
@@ -20,14 +20,14 @@ const variantColor = {
 
   outlined: {
     primary:
-      'border-2 border-primary-600 text-primary-600 hover:bg-primary-100',
-    success: 'border-2 border-green-600 text-green-600 hover:bg-green-100',
-    error: 'border-2 border-red-600 text-red-600 hover:bg-red-100',
+      'border-2 border-primary-400 text-primary-400 hover:bg-primary-900',
+    success: 'border-2 border-green-400 text-green-400 hover:bg-green-900',
+    error: 'border-2 border-red-400 text-red-400 hover:bg-red-900',
   },
   text: {
-    primary: 'text-primary-600 hover:bg-primary-100',
-    success: 'text-green-600 hover:bg-green-100',
-    error: 'text-red-600 hover:bg-red-100',
+    primary: 'text-primary-400 hover:bg-primary-900',
+    success: 'text-green-400 hover:bg-green-900',
+    error: 'text-red-400 hover:bg-red-900',
   },
 }
 
@@ -44,9 +44,8 @@ const Button = ({
   fullWidth = false,
   disabled = false,
   children = '',
-  // eslint-disable-next-line no-console
   onClickAction = () => console.error('onClick not implemented'),
-  className = '',
+  classes = '',
 }: IButtonProps) => {
   const sizeCls = sizes[size]
   const variantCls = variantColor[variant][color]
@@ -59,7 +58,7 @@ const Button = ({
       type='button'
       disabled={disabled}
       onClick={onClickAction}
-      className={`uppercase rounded-sm ${sizeCls} ${fwCls} ${variantCls} ${disCls} ${className}`}
+      className={`uppercase  rounded-sm ${sizeCls} ${fwCls} ${variantCls} ${disCls} ${classes} `}
     >
       {children}
     </button>

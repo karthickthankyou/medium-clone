@@ -21,6 +21,9 @@ const Template: ComponentStory<typeof Text> = ({
       {children}
     </Text>
     <hr className='border-gray-600' />
+    <div className='mt-3 text-xs text-gray-600'>
+      *The borders are to show the line height
+    </div>
   </div>
 )
 
