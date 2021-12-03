@@ -1,6 +1,7 @@
-import { HTMLAttributes } from 'react'
+import React, { HTMLAttributes } from 'react'
 import { HiOutlineBookmark } from '@react-icons/all-files/hi/HiOutlineBookmark'
-import { HiOutlineDotsHorizontal } from '@react-icons/all-files/hi/HiOutlineDotsHorizontal'
+
+import Popover from 'src/components/molecules/Popover'
 import Badge from '../Badge'
 
 export interface ICardFooterProps {
@@ -43,7 +44,8 @@ const CardFooter = ({
         <HiOutlineBookmark className='w-5 h-5' />
       </button>
       <button type='button'>
-        <HiOutlineDotsHorizontal className='w-5 h-5 ml-2' />
+        {/* <HiOutlineBookmark className='w-5 h-5' /> */}
+        <Popover />
       </button>
     </div>
   </div>

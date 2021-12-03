@@ -5,16 +5,14 @@ export interface ILinkProps {
   href: string
   className?: string
   children?: ReactElement | string
-  prefetch?: boolean
 }
 
 const Link = ({
   href,
   className,
-  prefetch = true,
   children = '*no children passed*',
 }: ILinkProps) => (
-  <NextLink href={href} passHref prefetch={prefetch}>
+  <NextLink href={href} passHref>
     <a className={className}>{children}</a>
   </NextLink>
 )

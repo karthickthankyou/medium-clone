@@ -19,6 +19,7 @@ const Nav = () => (
       <button type='button' className='ml-3 '>
         <HiOutlineBell className='w-6 h-6 text-gray-600' />
       </button>
+
       <button
         type='button'
         className='px-3 py-1.5 h-full hidden sm:block ml-3 text-sm border border-gray-600 hover:bg-gray-50 rounded-full'

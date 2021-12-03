@@ -1,7 +1,7 @@
 export interface ICallout1Props {}
 
-const Callout1 = () => (
-  <div className='flex flex-wrap items-center justify-center p-3 bg-gray-100 rounded-md'>
+const Callout = () => (
+  <div className='flex flex-wrap items-center justify-center p-6 bg-gray-100 rounded-md'>
     <div className='mr-2 text-gray-700'>
       Share your ideas with millions of readers.
     </div>
@@ -14,4 +14,4 @@ const Callout1 = () => (
   </div>
 )
 
-export default Callout1
+export default Callout

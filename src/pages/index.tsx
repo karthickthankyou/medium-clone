@@ -17,6 +17,7 @@ import MainCard from 'src/components/molecules/MainCard'
 import AuthorCard from 'src/components/molecules/AuthorCard'
 import SubMainCard from 'src/components/molecules/SubMainCard'
 import Footer from 'src/components/molecules/Footer'
+import Callout from 'src/components/atoms/Callout'
 
 export const getStaticProps: GetStaticProps = async () => ({
   props: { data: ['Karthick', 'Ragavendran'] }, // will be passed to the page component as props
@@ -176,6 +177,7 @@ const Home: NextPage = ({
                     src='https://via.placeholder.com/150'
                     title='Compromising code quality for faster release? Bad idea'
                   />
+                  <Callout />
                   <MainCard
                     desc='Too many times we have heard tales of code quality being kept on the back burner for the sake of a Monday morning release and then never ever picked back up, let’s explore why is this a bad idea.'
                     src='https://via.placeholder.com/150'
@@ -351,7 +353,7 @@ const Home: NextPage = ({
         >
           Powered by{' '}
           <span>
-            <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
+            <Image src='/vercel.svg' layout='fill' alt='Vercel Logo' />
           </span>
         </a>
       </footer>

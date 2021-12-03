@@ -1,13 +1,13 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import Callout1 from './Callout1'
+import Callout from './Callout'
 
 export default {
-  title: 'atoms/Callout1',
-  component: Callout1,
-} as ComponentMeta<typeof Callout1>
+  title: 'atoms/Callout',
+  component: Callout,
+} as ComponentMeta<typeof Callout>
 
-const Template: ComponentStory<typeof Callout1> = (args) => <Callout1 />
+const Template: ComponentStory<typeof Callout> = (args) => <Callout />
 
 export const Primary = Template.bind({})
 Primary.args = {}
