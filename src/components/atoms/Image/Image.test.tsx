@@ -7,6 +7,7 @@ describe('Image Component', () => {
     render(
       <Image
         src='https://via.placeholder.com/150'
+        fallbackSrc='https://via.placeholder.com/150'
         blurDataURL='ttps://via.placeholder.com/10'
         layout='fill'
         alt=''

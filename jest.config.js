@@ -1,13 +1,17 @@
 module.exports = {
+  preset: 'ts-jest',
   collectCoverageFrom: [
     '**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
     '!**/node_modules/**',
   ],
+  moduleDirectories: ['node_modules', '<rootDir>'],
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)
     // https://jestjs.io/docs/webpack#mocking-css-modules
-    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+    // '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+    // '\\.(css|less)$': '<rootDir>/src/__mocks__/styleMock.js',
+    '\\.(css|less)$': 'identity-obj-proxy',
 
     // Handle CSS imports (without CSS modules)
     // '^.+\\.(css|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',

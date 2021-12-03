@@ -7,7 +7,7 @@ export default {
   component: ShadowsDarkMode,
 } as ComponentMeta<typeof ShadowsDarkMode>
 
-const Template: ComponentStory<typeof ShadowsDarkMode> = () => (
+const Template: ComponentStory<typeof ShadowsDarkMode> = (args) => (
   <ShadowsDarkMode />
 )
 
