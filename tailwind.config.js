@@ -5,6 +5,7 @@ const tailwindScrollbarHide = require('tailwind-scrollbar-hide')
 
 module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  important: true,
   mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {

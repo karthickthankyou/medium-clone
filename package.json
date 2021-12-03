@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^0.1.1",
+    "@reach/tabs": "^0.16.4",
     "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^1.6.2",
     "@sentry/nextjs": "^6.15.0",
@@ -67,7 +68,7 @@
     "autoprefixer": "^10.4.0",
     "babel-jest": "27.0.6",
     "babel-loader": "^8.2.3",
-    "chromatic": "^6.0.6",
+    "chromatic": "^6.1.0",
     "cypress": "^9.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^19.0.1",

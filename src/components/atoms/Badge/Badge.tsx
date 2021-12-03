@@ -14,7 +14,7 @@ const Badge = ({ displayText, size = 'md' }: IBadgeProps) => {
   return (
     <Link
       href='/'
-      className={`transition-all duration-300 bg-gray-200 rounded-full hover:bg-gray-300 ${sizeCls[size]}`}
+      className={`whitespace-nowrap transition-all duration-300 bg-gray-100 rounded-full hover:bg-gray-300 ${sizeCls[size]}`}
     >
       {displayText}
     </Link>

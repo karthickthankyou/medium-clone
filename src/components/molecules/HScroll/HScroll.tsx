@@ -11,7 +11,7 @@ const HScroll = ({ children }: IHScrollProps) => {
   const [scrollPos, scrollEl, scrollListesener, scroll] = useScroll()
 
   return (
-    <div className='relative bg-gray-50'>
+    <div className='relative py-3 overflow-x-scroll'>
       {scrollPos[0] > 0 && (
         <button
           type='button'
