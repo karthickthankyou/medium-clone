@@ -14,7 +14,7 @@ const AuthorCard = ({ src, displayName, about }: IAuthorCardProps) => (
       className='flex-shrink-0 w-16 h-16 rounded-full shadow-md'
     />
     <div className='flex-grow'>
-      <h2 className='text-lg font-bold line-clamp-2'>{displayName}</h2>
+      <h2 className='font-semibold line-clamp-2'>{displayName}</h2>
       <p className='max-w-sm text-sm text-gray-700 line-clamp-2'>{about}</p>
     </div>
 
